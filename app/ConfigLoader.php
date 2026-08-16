@@ -222,7 +222,7 @@ function isValidBearerAuth(array $config): bool
 
 /**
  * Callers supply this at request time (unlike the admin-configured
- * `scanners` URLs), so it must accept arbitrary hosts/paths — just check
+ * `scanners` URLs), so it must accept arbitrary hosts/paths - just check
  * it's a well-formed http(s) URL. The caller is already an authenticated
  * Bearer-token holder (same trust level as the rest of the API), so this
  * isn't hardened against SSRF from a hostile caller.

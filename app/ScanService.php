@@ -10,7 +10,7 @@ require_once __DIR__ . '/ConfigLoader.php';
 
 /**
  * Tiny wrapper around `scanimage` (SANE + sane-airscan) to scan a document
- * from a network scanner (eSCL/AirScan) — no USB passthrough needed.
+ * from a network scanner (eSCL/AirScan) - no USB passthrough needed.
  */
 class ScanService
 {
@@ -99,7 +99,7 @@ class ScanService
             return ['success' => false, 'message' => 'Invalid format', 'path' => null, 'ext' => null, 'mime' => null];
         }
 
-        // A physical scanner can only serve one request at a time — hammering
+        // A physical scanner can only serve one request at a time - hammering
         // it with overlapping scans (UI + API, or several rapid API calls)
         // has been observed to leave a real device unreachable on the network
         // for several minutes. Reject overlapping scans instead of racing it.

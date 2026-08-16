@@ -17,7 +17,7 @@ $pwd = (string)($config['index_password'] ?? '');
 $sessionAuthed = $pwd === '' || (isset($_SESSION['index_auth']) && $_SESSION['index_auth'] === true);
 if (!$sessionAuthed) {
     if (getAuthHeader() !== null) {
-        // Looks like an API call (Authorization header present) — respond
+        // Looks like an API call (Authorization header present) - respond
         // with a plain 401 instead of redirecting to the login page.
         if (!isValidBearerAuth($config)) {
             http_response_code(401);

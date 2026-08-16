@@ -67,7 +67,7 @@ if ($webhookUrl !== '' && !isValidWebhookUrl($webhookUrl)) {
 }
 
 // The scan itself runs in a detached background process (can take well over
-// a minute at high resolution) — respond immediately with a job id, the
+// a minute at high resolution) - respond immediately with a job id, the
 // caller polls /api-status or waits for the optional webhook.
 $jobId = addJob([
     'type'     => 'scan',
@@ -80,7 +80,7 @@ $jobId = addJob([
     'file'     => null,
 ]);
 
-// PHP_BINARY is empty under the Apache/mod_php SAPI (unlike CLI) — PHP_BINDIR
+// PHP_BINARY is empty under the Apache/mod_php SAPI (unlike CLI) - PHP_BINDIR
 // is a compile-time constant and stays correct regardless of SAPI.
 $phpCli = PHP_BINDIR . '/php';
 $cmd = sprintf(
