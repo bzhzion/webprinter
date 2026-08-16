@@ -381,5 +381,5 @@ flat file under `app/data/`, gitignored and blocked from direct HTTP access.
 
 [PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/) - see
 [`LICENSE`](LICENSE). Free for personal, educational, and nonprofit use; commercial use requires a
-separate license from the copyright holder. Created by Painteau for Breizhzion. Contributions
+separate license from the copyright holder. Created by Breizhzion. Contributions
 welcome: https://github.com/bzhzion/webprinter
