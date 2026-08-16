@@ -38,12 +38,11 @@ Docker anywhere else.
 Most "print from your phone" solutions mean handing a document to a cloud service, or fighting
 with AirPrint discovery across VLANs. WebPrinter is the opposite: one small PHP app, one Docker
 container, talking directly to CUPS and to your scanner over eSCL. No account, no cloud, no data
-leaving your network unless you want it to (the API is reachable over Tailscale/VPN just as well
-as LAN).
+leaving your network unless you want it to.
 
-It was built to serve two households from a single instance — one printer/scanner physically on
-the box's own LAN, another reached over a Tailscale subnet route to a different network entirely.
-CUPS and SANE don't care where the device actually lives.
+Configure as many printers and scanners as you have — WebPrinter doesn't care whether they're all
+on the same LAN or reachable through a VPN, it just needs CUPS (for printing) and an eSCL endpoint
+(for scanning) to talk to each one.
 
 ## Features
 
