@@ -9,7 +9,7 @@ simple web page and HTTP API. Built to run happily on a Raspberry Pi Zero, and j
 Docker anywhere else.
 
 [![Docker Build](https://github.com/bzhzion/webprinter/actions/workflows/docker_build.yml/badge.svg)](https://github.com/bzhzion/webprinter/actions/workflows/docker_build.yml)
-[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-blue.svg)](LICENSE)
+[![License: BZ-1.1](https://img.shields.io/badge/License-BZ--1.1-blue.svg)](LICENSE)
 [![GHCR](https://img.shields.io/badge/ghcr.io-bzhzion%2Fwebprinter-blue?logo=docker)](https://github.com/bzhzion/webprinter/pkgs/container/webprinter)
 
 </div>
@@ -379,7 +379,9 @@ flat file under `app/data/`, gitignored and blocked from direct HTTP access.
 
 ## License
 
-[PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0/) - see
-[`LICENSE`](LICENSE). Free for personal, educational, and nonprofit use; commercial use requires a
-separate license from the copyright holder. Created by Breizhzion. Contributions
-welcome: https://github.com/bzhzion/webprinter
+[BREIZHZION Personal Use License, BZ-1.1](LICENSE) - a source-available license, not an OSI-approved
+open source license. You may read, study, fork for study purposes, and modify the Work for your
+own strictly personal use. Building, installing, or providing any service based on this project
+for anyone else - even for free, even as a non-profit - and any commercial use, are reserved to
+BREIZHZION or a party holding a written commercial license. Contact contact@breizhzion.com for
+commercial licensing inquiries. Created by Breizhzion: https://github.com/bzhzion/webprinter
