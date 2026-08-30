@@ -1,9 +1,21 @@
 name: build-and-push
 
 on:
+  # Declenchement automatique uniquement si du code reellement deploye change : un
+  # commit qui ne touche que la doc racine ou les tests ne relance plus le build.
+  # Piege GitHub : branches/tags ET paths-ignore sont combines, donc un tag pose sur
+  # un commit purement documentaire ne declenche pas non plus -> declenchement manuel.
   push:
     branches: [ "main" ]
     tags: [ "*" ]
+    paths-ignore:
+      - '*.md'
+      - 'docs/**'
+      - 'tests/**'
+      - 'test_*.py'
+      - '.gitignore'
+      - 'LICENSE'
+  workflow_dispatch:
 
 permissions:
   contents: read
