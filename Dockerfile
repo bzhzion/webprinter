@@ -24,4 +24,13 @@ COPY . /var/www/html
 
 RUN chown -R www-data:www-data /var/www/html
 
+# Version resolue depuis le tag git par la CI : exposee via health.php sur presentation
+# de X-Health-Token, et derivee pour le cache-busting du CSS.
+ARG APP_VERSION=dev
+ENV APP_VERSION=$APP_VERSION
+
+# Empreinte opaque, jamais la version en clair : cette valeur est lisible publiquement.
+# Ancre sur le guillemet fermant pour rester idempotent si la commande est rejouee.
+RUN ASSET_V=$(printf '%s' "$APP_VERSION" | sha256sum | cut -c1-8) && sed -i "s|\"style\.css\"|\"style.css?v=${ASSET_V}\"|g" /var/www/html/*.php
+
 EXPOSE 80
