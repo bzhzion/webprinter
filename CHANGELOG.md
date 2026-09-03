@@ -8,6 +8,20 @@ est renommée en numéro de version au moment de poser le tag.
 
 ## [Unreleased]
 
+### Ajouté
+
+- **Contrôle de syntaxe PHP à chaque push** (`.github/workflows/php-lint.yml`). Une erreur de
+  syntaxe dans un fichier PHP de WordPress ne dégrade pas une page, elle met **tout le site en
+  erreur fatale** : le coût d'une faute de frappe est le site entier. `php -l` parse sans
+  exécuter, c'est le contrôle le moins cher qui existe pour ce risque, et ce dépôt n'en avait
+  aucun.
+- Vérification pure, donc **sur push de branche** conformément à la convention de parc : seuls les
+  workflows qui déploient sont limités aux tags.
+- `runs-on: ubuntu-latest` parce que ce dépôt est **public**, les minutes y étant gratuites et
+  l'image Ubuntu embarquant déjà PHP (8.3.6). Sur un dépôt privé il faut un runner self-hosted.
+- `vendor/` est exclu : ce sont des dépendances tierces, et une bibliothèque livrée pour une autre
+  version de PHP ferait échouer le lint sans rien dire de ce dépôt.
+
 ## [0.1.0] - 2026-08-30
 
 ### Ajouté
