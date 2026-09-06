@@ -190,7 +190,7 @@ if ($pwd !== '' && (!isset($_SESSION['index_auth']) || $_SESSION['index_auth'] !
         <?php else: ?>
             Imprimante : <?= htmlspecialchars($printers[$selectedPrinter] ?? $selectedPrinter, ENT_QUOTES, 'UTF-8') ?> · Taille max : <?= (int)($config['max_file_size_mb'] ?? 10) ?> Mo · Types : PDF, JPEG, PNG, TIFF, texte
         <?php endif; ?>
-        <div class="footer-meta">WebPrinter - créé par Breizhzion · <a href="https://github.com/bzhzion/webprinter" target="_blank" rel="noopener noreferrer">Projet GitHub</a> · <a href="LICENSE" target="_blank" rel="noopener noreferrer">License</a></div>
+        <div class="footer-meta">WebPrinter - créé par Breizhzion · <a href="https://github.com/bzhzion/webprinter" target="_blank" rel="noopener noreferrer">Projet GitHub</a> · <a href="LICENSE.md" target="_blank" rel="noopener noreferrer">License</a></div>
     </footer>
 </main>
 <script src="app.js" defer></script>

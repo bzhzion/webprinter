@@ -148,7 +148,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 
     <footer>
-        <div class="footer-meta">WebPrinter - créé par Breizhzion · <a href="https://github.com/bzhzion/webprinter" target="_blank" rel="noopener noreferrer">Projet GitHub</a> · <a href="LICENSE" target="_blank" rel="noopener noreferrer">License</a></div>
+        <div class="footer-meta">WebPrinter - créé par Breizhzion · <a href="https://github.com/bzhzion/webprinter" target="_blank" rel="noopener noreferrer">Projet GitHub</a> · <a href="LICENSE.md" target="_blank" rel="noopener noreferrer">License</a></div>
     </footer>
 </main>
 </body>

@@ -8,6 +8,18 @@ est renommée en numéro de version au moment de poser le tag.
 
 ## [Unreleased]
 
+### Modifié
+
+- Le fichier de licence s'appelle désormais `LICENSE.md`, aligné sur les autres dépôts
+  publics du parc et sur le `BZ-1.1.md` canonique dont il est la copie. Le texte est du
+  Markdown, donc un nom sans extension le faisait servir par GitHub en texte préformaté,
+  avec les `#` et les `**` visibles. Le nom ne change rien à la détection de licence :
+  GitHub annonce « Other » dans les deux cas, BZ-1.1 n'étant pas répertoriée par SPDX.
+- Les liens vers la licence sont suivis partout où ils existaient, y compris les deux
+  pieds de page PHP servis par l'application déployée (`index.php`, `scan.php`), qui
+  pointaient vers un chemin devenu introuvable.
+
+
 ### Ajouté
 
 - **Contrôle de syntaxe PHP à chaque push** (`.github/workflows/php-lint.yml`). Une erreur de
