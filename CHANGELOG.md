@@ -57,6 +57,10 @@ est renommée en numéro de version au moment de poser le tag.
 - `vendor/` est exclu : ce sont des dépendances tierces, et une bibliothèque livrée pour une autre
   version de PHP ferait échouer le lint sans rien dire de ce dépôt.
 
+### Sécurité
+
+- L'empreinte de cache des feuilles de style est tirée de leur contenu et non plus de la version : celle tirée de la version permettait de retrouver la version du service, que /health ne donne qu'avec un jeton.
+
 ## [0.1.0] - 2026-08-30
 
 ### Ajouté
