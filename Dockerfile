@@ -11,7 +11,8 @@ RUN { \
         echo 'log_errors = On'; \
         echo 'error_reporting = E_ALL'; \
         echo 'max_execution_time = 180'; \
-    } > /usr/local/etc/php/conf.d/webprinter.ini
+        echo 'session.upload_progress.enabled = Off'; \
+    } >/usr/local/etc/php/conf.d/webprinter.ini
 
 # sane-airscan ships /etc/sane.d/airscan.conf owned by root; www-data (PHP)
 # needs to rewrite it from the configured scanner list before each scan.

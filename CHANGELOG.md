@@ -8,6 +8,13 @@ est renommée en numéro de version au moment de poser le tag.
 
 ## [Unreleased]
 
+### Sécurité
+
+- **Image reconstruite sur `php:8.2-apache` en 8.2.35** contre PHP2Shell (CVE-2026-109618 et
+  CVE-2026-109619, RCE sans authentification, 2026-10-21), et
+  **`session.upload_progress.enabled = Off`** : c'est le chemin d'exploitation confirmé de la
+  seconde, et l'application ouvre des sessions sans jamais suivre la progression d'un envoi.
+
 ### Modifié
 
 - **`actions/checkout` et `actions/setup-node` passent en v7** dans les workflows : les versions
