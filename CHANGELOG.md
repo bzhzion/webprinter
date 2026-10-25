@@ -17,6 +17,7 @@ est renommée en numéro de version au moment de poser le tag.
 
 ### Modifié
 
+- **Adresse de l'association : 34 rue Decomberousse, 69100 Villeurbanne** (le siège quitte le 4 rue Isabelle Sadoyan), dans `LICENSE.md`.
 - **`actions/checkout` et `actions/setup-node` passent en v7** dans les workflows : les versions
   posées déclaraient `using: node20`, déprécié et déjà forcé sur Node 24 par GitHub. Les quatre
   changements de rupture de ces majeures ont été lus et confrontés au parc, aucun ne s'y applique,
