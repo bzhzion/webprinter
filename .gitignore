@@ -1,2 +1,8 @@
 app/config.php
 app/data/
+
+# Variantes de .env (sauvegardes .env.bak-*, .env.local...) : memes secrets que .env.
+# Seul .env.example est versionne.
+.env
+.env.*
+!.env.example

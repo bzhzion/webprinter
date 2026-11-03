@@ -16,6 +16,7 @@ est renommée en numéro de version au moment de poser le tag.
   seconde, et l'application ouvre des sessions sans jamais suivre la progression d'un envoi.
 
 ### Modifié
+- `.gitignore` : toute variante `.env.*` est ignorée, sauf `.env.example`. Une copie de sauvegarde `.env.bak-*` porte les mêmes secrets que `.env` (règle de parc du 2026-11-03).
 
 - **Adresse de l'association : 34 rue Decomberousse, 69100 Villeurbanne** (le siège quitte le 4 rue Isabelle Sadoyan), dans `LICENSE.md`.
 - **`actions/checkout` et `actions/setup-node` passent en v7** dans les workflows : les versions
